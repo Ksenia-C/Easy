@@ -34,7 +34,7 @@ class Errors{
 }
 
 class OpenFile{
-//fun-функция, flag-имя переменной, ассоциированной с файлом, name - имя настоящего файла
+    //fun-функция, flag-имя переменной, ассоциированной с файлом, name - имя настоящего файла
     String flag,name,fun;
     public OpenFile(String flag, String name, String fun){
         this.flag=flag;
