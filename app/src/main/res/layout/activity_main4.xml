@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary1"
+    tools:context="com.example.ksenia.myproject1_proect.MainActivity4"
+    ><!--xmlns:app="http://schemas.android.com/apk/res-auto" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/totranslate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/colorA"
+            android:text="@string/pascal_c"
+            android:textSize="10pt"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/totraspon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c_pascal"
+            android:textSize="10pt"
+            android:background="@color/colorA"
+            android:layout_weight="3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/toask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="@string/directory"
+            android:layout_weight="3"
+            android:background="@color/colorA"
+
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/tosendletter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="@string/sendletter"
+            android:layout_weight="3"
+            android:background="@color/colorA"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/togivehelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="@string/aboutprodj"
+            android:layout_weight="3"
+            android:background="@color/colorA"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/forme"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

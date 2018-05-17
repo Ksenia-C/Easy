@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ksenia.myproject1_proect.MainActivity6">
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="vertical"
+        android:background="@color/forme">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme"
+            tools:ignore="NestedWeights">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/TextPAscal"
+            android:layout_width="347dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/stringatpascal"
+            android:gravity="start"
+            android:textSize="9pt"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme">
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="vertical"
+        android:background="@color/forme">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme"
+            tools:ignore="NestedWeights">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/TextCpp"
+            android:layout_width="347dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/stringatC"
+            android:gravity="start"
+            android:textSize="9pt"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme">
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="vertical"
+        android:background="@color/forme">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme"
+            tools:ignore="NestedWeights">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/TextComent"
+            android:layout_width="347dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/comment"
+            android:gravity="start"
+            android:textSize="9pt"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/forme">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="vertical"
+        android:background="@color/forme">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonLetter"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="9pt"
+        android:layout_weight="15"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#000"
+        android:text="@string/send0" />
+</LinearLayout>

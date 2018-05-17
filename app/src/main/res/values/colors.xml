@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DB1416</color>
+    <color name="colorPrimaryDark">#F7A208</color>
+    <color name="colorAccent">#F6BCF4</color>
+    <color name="colorA">#DFE9FB</color>
+    <color name="textColorPrimary">#000</color>
+    <color name="foryor">#FFFEA8</color>
+    <color name="fory">#FFFD75</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary1">#DFE9FB</color>
+    <color name="forme">#C5BFBF</color>
+</resources>

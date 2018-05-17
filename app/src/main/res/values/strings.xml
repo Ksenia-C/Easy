@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyProject1_proect</string>
+    <string name="answer">no yet</string>
+    <string name="a11">Данное приложение поможет вам переводить программу из Pascal в C++.
+    </string>
+    <string name="a12">Чтобы перевести текст, нажмите на кнопку « Pascal -> С++» и  вставьте вашу программу. Пожалуйста, переводите корректный код.
+    </string>
+    <string name="a13">Если ваша программа содержит команды, которые мое приложение пока переводить не умеет, оно напишет вам об ошибке, и на какой строчке она произошла. Вы можете вернуться  к своей программе и перевести эту команду самостоятельно, либо поискав решение в интернете.
+    </string>
+    <string name="a14">Также можно написать мне письмо, где вы укажите эту команду, и я смогу улучшить приложение.
+    </string>
+    <string name="a15">Если вам интересно, как приложение переводит программу, что оно умеет переводить, вы можете зайти в справочник.
+    </string>
+    <string name="a16">Надеюсь, моя работа поможет вам.</string>
+    <string name="title_of_pr">program</string>
+    <string name="pascal">Pascal</string>
+    <string name="send0">отправить</string>
+    <string name="answerinme">ответ в разработке</string>
+    <string name="back">назад</string>
+    <string name="translate">перевести</string>
+    <string name="menuprog">меню</string>
+    <string name="putyourcode">вставте ваш код</string>
+    <string name="pascal_c"><![CDATA[Pascal -> C++]]></string>
+    <string name="c_pascal"><![CDATA[C++ -> Pascal]]></string>
+    <string name="directory">Справочник</string>
+    <string name="sendletter">Отправить письмо</string>
+    <string name="aboutprodj">О приложении</string>
+    <string name="stringatpascal">строка на паскале (обязательное поле)</string>
+    <string name="stringatC">строка на C++</string>
+    <string name="comment">коментарий</string>
+    <string name="Cplusplus">C++</string>
+</resources>
