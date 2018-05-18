@@ -726,6 +726,7 @@ public class MainActivity3 extends AppCompatActivity {
                         i = pole.next();
                         i = pole.next();
                         i = pole.next();
+                        main_part.body.add("fclose ("+i+");");
                         i = pole.next();
                     } else if (i.equals("begin") && !main_part.for_main) {
                         main_part.body.add("{");
