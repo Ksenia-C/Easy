@@ -78,6 +78,15 @@ class Program_to_out{
             }
         }
     }
+    String close_file(String flag){
+        for(int i=0;i<openings.size();i++){
+            if(openings.get(i).flag.equals(flag)){
+               return openings.get(i).fun.equals("r")?"stdin":"stdout";
+            }
+        }
+        return "none";
+    }
+
 }
 //класс для переменной
 class ForVar{
@@ -725,8 +734,8 @@ public class MainActivity3 extends AppCompatActivity {
                         //закрытие файла
                         i = pole.next();
                         i = pole.next();
+                        main_part.body.add("fclose ("+main_part.close_file(i)+");");
                         i = pole.next();
-                        main_part.body.add("fclose ("+i+");");
                         i = pole.next();
                     } else if (i.equals("begin") && !main_part.for_main) {
                         main_part.body.add("{");
