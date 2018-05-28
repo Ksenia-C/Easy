@@ -16,7 +16,7 @@ public class MainActivity7 extends AppCompatActivity {
         setTitle(getString(R.string.title_of_pr));
         TextView text7 = findViewById(R.id.texthelp);
         text7.setMovementMethod(new ScrollingMovementMethod());
-        text7.setText(getString(R.string.a11)+"\n"+getString(R.string.a12)+"\n"+getString(R.string.a13)+"\n"+getString(R.string.a14)+"\n"+getString(R.string.a15)+"\n"+getString(R.string.a16));
+        text7.setText(getString(R.string.a11)+"\n"+getString(R.string.a12)+"\n"+getString(R.string.a13)+"\n"+getString(R.string.a14)+"\n"+getString(R.string.a15)+"\n"+getString(R.string.a16)+"\n"+getString(R.string.a17));
 
     }
 }

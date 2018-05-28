@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyProject1_proect</string>
+    <string name="app_name">Easy</string>
     <string name="answer">no yet</string>
     <string name="a11">Данное приложение поможет вам переводить программу из Pascal в C++.
     </string>
@@ -12,6 +12,8 @@
     <string name="a15">Если вам интересно, как приложение переводит программу, что оно умеет переводить, вы можете зайти в справочник.
     </string>
     <string name="a16">Надеюсь, моя работа поможет вам.</string>
+    <string name="a17">Петренко Ксения Евгеньевна
+    г. Владивосток 2018 IT школа Samsung</string>
     <string name="title_of_pr">program</string>
     <string name="pascal">Pascal</string>
     <string name="send0">отправить</string>
