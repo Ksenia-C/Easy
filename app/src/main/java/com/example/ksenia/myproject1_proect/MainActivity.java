@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle(getString(R.string.title_of_pr));
         startActivity(new Intent(MainActivity.this, MainActivity4.class));
+
     }
 }

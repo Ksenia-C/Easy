@@ -31,9 +31,9 @@
 
         <EditText
             android:id="@+id/TextPAscal"
-            android:layout_width="347dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="12"
             android:background="@color/white"
             android:ems="10"
             android:hint="@string/stringatpascal"
@@ -74,9 +74,9 @@
 
         <EditText
             android:id="@+id/TextCpp"
-            android:layout_width="347dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="12"
             android:background="@color/white"
             android:ems="10"
             android:hint="@string/stringatC"
@@ -117,9 +117,9 @@
 
         <EditText
             android:id="@+id/TextComent"
-            android:layout_width="347dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="12"
             android:background="@color/white"
             android:ems="10"
             android:hint="@string/comment"

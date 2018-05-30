@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -188,11 +189,18 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         setTitle(getString(R.string.title_of_pr));
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int width=dm.widthPixels;
+        int height=dm.heightPixels;
         code= getIntent().getStringExtra("code");
         code_to_back=code;
         text_in_layout= (TextView) findViewById(R.id.TextView2);
         text_in_layout.setMovementMethod(new ScrollingMovementMethod());
+        text_in_layout.setTextSize(height/90);
+
         Button bt=(Button)findViewById(R.id.Button2);
+        bt.setTextSize(height/90);
         Thread thread=new Thread(new AnotherRunnable());
         thread.start();
         View.OnClickListener listener=new View.OnClickListener() {

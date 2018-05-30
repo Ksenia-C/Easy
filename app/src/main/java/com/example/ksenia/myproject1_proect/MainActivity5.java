@@ -3,7 +3,13 @@ package com.example.ksenia.myproject1_proect;
 import android.app.Activity;
 import android.os.Bundle;
 
+import android.util.DisplayMetrics;
+
 import android.widget.ListView;
+import android.widget.TextView;
+
+
+
 // справочник
 public class MainActivity5 extends Activity {
     @Override
@@ -11,8 +17,17 @@ public class MainActivity5 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
         setTitle(getString(R.string.title_of_pr));
-        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas());
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int width=dm.widthPixels;
+        int height=dm.heightPixels;
+        TextView bt1=(TextView) findViewById(R.id.titlep);
+        bt1.setTextSize(height/70);
+        bt1=(TextView) findViewById(R.id.titlec);
+        bt1.setTextSize(height/70);
+        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas(),height/80);
         ListView lv =  findViewById(R.id.List);
+
         lv.setAdapter(adapter);
     }
     String name_pas[]= new String[]{"begin end","var a:integer","var a:string","var a:boolean","var a:shortint(char)"

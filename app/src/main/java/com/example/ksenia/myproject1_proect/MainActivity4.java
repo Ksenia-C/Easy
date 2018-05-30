@@ -3,6 +3,7 @@ package com.example.ksenia.myproject1_proect;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -14,11 +15,21 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         setTitle(getString(R.string.title_of_pr));
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int width=dm.widthPixels;
+        int height=dm.heightPixels;
         totr1=findViewById(R.id.totranslate);
         totr2=findViewById(R.id.totraspon);
         todescr=findViewById(R.id.toask);
         tohelp=findViewById(R.id.togivehelp);
         toauthor=findViewById(R.id.tosendletter);
+
+        totr1.setTextSize(height/90);
+        totr2.setTextSize(height/90);
+        todescr.setTextSize(height/90);
+        tohelp.setTextSize(height/90);
+        toauthor.setTextSize(height/90);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -33,6 +44,7 @@ public class MainActivity4 extends AppCompatActivity {
 
                         Toast toast = Toast.makeText(getApplicationContext(),
                                 " Вы не можете воспользоваться этой функцией. Она в разработке.", Toast.LENGTH_LONG);
+
                         toast.show();
                         break;
                     }

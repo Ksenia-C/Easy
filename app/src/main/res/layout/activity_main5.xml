@@ -25,6 +25,7 @@
 
 
             <TextView
+                android:id="@+id/titlep"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
                 tools:ignore="RtlSymmetry" />
 
             <TextView
+                android:id="@+id/titlec"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

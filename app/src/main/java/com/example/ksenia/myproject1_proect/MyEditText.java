@@ -11,6 +11,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.Display;
+import android.view.WindowManager;
 
 
 //класс для текстового поля, где надо пронумеровать строки
@@ -25,7 +28,9 @@ public class MyEditText extends android.support.v7.widget.AppCompatEditText {
         paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.parseColor("#EFAF8C"));
-        paint.setTextSize(50);
+        DisplayMetrics dm = getResources().getDisplayMetrics();
+        int densityDpi = dm.heightPixels;
+        paint.setTextSize(densityDpi/39);
     }
 
 
