@@ -22,10 +22,10 @@ public class MainActivity5 extends Activity {
         int width=dm.widthPixels;
         int height=dm.heightPixels;
         TextView bt1=(TextView) findViewById(R.id.titlep);
-        bt1.setTextSize(height/70);
+        bt1.setTextSize(height/40);
         bt1=(TextView) findViewById(R.id.titlec);
-        bt1.setTextSize(height/70);
-        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas(),height/80);
+        bt1.setTextSize(height/40);
+        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas(),height/46);
         ListView lv =  findViewById(R.id.List);
 
         lv.setAdapter(adapter);

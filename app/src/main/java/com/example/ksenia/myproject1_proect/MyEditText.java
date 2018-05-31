@@ -30,7 +30,7 @@ public class MyEditText extends android.support.v7.widget.AppCompatEditText {
         paint.setColor(Color.parseColor("#EFAF8C"));
         DisplayMetrics dm = getResources().getDisplayMetrics();
         int densityDpi = dm.heightPixels;
-        paint.setTextSize(densityDpi/39);
+        paint.setTextSize(densityDpi/33);
     }
 
 

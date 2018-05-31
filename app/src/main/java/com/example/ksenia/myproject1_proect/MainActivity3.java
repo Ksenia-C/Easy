@@ -197,10 +197,10 @@ public class MainActivity3 extends AppCompatActivity {
         code_to_back=code;
         text_in_layout= (TextView) findViewById(R.id.TextView2);
         text_in_layout.setMovementMethod(new ScrollingMovementMethod());
-        text_in_layout.setTextSize(height/90);
+        text_in_layout.setTextSize(height/50);
 
         Button bt=(Button)findViewById(R.id.Button2);
-        bt.setTextSize(height/90);
+        bt.setTextSize(height/50);
         Thread thread=new Thread(new AnotherRunnable());
         thread.start();
         View.OnClickListener listener=new View.OnClickListener() {

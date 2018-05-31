@@ -26,10 +26,10 @@ public class MainActivity6 extends AppCompatActivity {
         ep=findViewById(R.id.TextPAscal);
         ec=findViewById(R.id.TextCpp);
         ek=findViewById(R.id.TextComent);
-        bl.setTextSize(height/80);
-        ep.setTextSize(height/80);
-        ec.setTextSize(height/80);
-        ek.setTextSize(height/80);
+        bl.setTextSize(height/50);
+        ep.setTextSize(height/50);
+        ec.setTextSize(height/50);
+        ek.setTextSize(height/50);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){

@@ -27,10 +27,10 @@ public class MainActivity2 extends AppCompatActivity {
         Button men= findViewById(R.id.Button0);
         edit= findViewById(R.id.editText1);
         edit.setMovementMethod(new ScrollingMovementMethod());
-        edit.setTextSize(height/90);
+        edit.setTextSize(height/50);
         edit.setPadding(width/15,1,width/15,1);
-        bt.setTextSize(height/90);
-        men.setTextSize(height/90);
+        bt.setTextSize(height/50);
+        men.setTextSize(height/50);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){

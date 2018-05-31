@@ -25,11 +25,11 @@ public class MainActivity4 extends AppCompatActivity {
         tohelp=findViewById(R.id.togivehelp);
         toauthor=findViewById(R.id.tosendletter);
 
-        totr1.setTextSize(height/90);
-        totr2.setTextSize(height/90);
-        todescr.setTextSize(height/90);
-        tohelp.setTextSize(height/90);
-        toauthor.setTextSize(height/90);
+        totr1.setTextSize(height/50);
+        totr2.setTextSize(height/50);
+        todescr.setTextSize(height/50);
+        tohelp.setTextSize(height/50);
+        toauthor.setTextSize(height/50);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){
