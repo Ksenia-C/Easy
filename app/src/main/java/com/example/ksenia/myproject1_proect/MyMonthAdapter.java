@@ -20,10 +20,10 @@ import android.widget.TextView;
 
 
 public class MyMonthAdapter extends ArrayAdapter<My> {
-    int text_size;
-     MyMonthAdapter(Context context, My[] arr,int si) {
+
+     MyMonthAdapter(Context context, My[] arr) {
         super(context, R.layout.adapter_item, arr);
-        text_size=si;
+
     }
 
 
@@ -37,8 +37,7 @@ public class MyMonthAdapter extends ArrayAdapter<My> {
         assert month != null;
         ((TextView) convertView.findViewById(R.id.textforP)).setText(month.Pascal);
         ((TextView) convertView.findViewById(R.id.textforC)).setText(month.Cplus);
-        ((TextView) convertView.findViewById(R.id.textforP)).setTextSize(text_size);
-        ((TextView) convertView.findViewById(R.id.textforC)).setTextSize(text_size);
+
         return convertView;
     }
 }

@@ -7,30 +7,27 @@ import android.text.method.ScrollingMovementMethod;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import com.example.ksenia.myproject1_proect.MyEditText;
+
 
 //активность для ввода кода программы и передачи его в следующую активность
 public class MainActivity2 extends AppCompatActivity {
 
-    EditText edit;
+    MyEditText edit;
     String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        setTitle(getString(R.string.title_of_pr));
+        setTitle("Pascal -> C++");
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int width=dm.widthPixels;
         int height=dm.heightPixels;
-        Button bt= findViewById(R.id.Button1);
-        Button men= findViewById(R.id.Button0);
-        edit= findViewById(R.id.editText1);
+        Button bt=(Button) findViewById(R.id.Button1);
+        Button men= (Button)findViewById(R.id.Button0);
+        edit=(MyEditText) findViewById(R.id.editText1);
         edit.setMovementMethod(new ScrollingMovementMethod());
-        edit.setTextSize(height/50);
-        edit.setPadding(width/15,1,width/15,1);
-        bt.setTextSize(height/50);
-        men.setTextSize(height/50);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){

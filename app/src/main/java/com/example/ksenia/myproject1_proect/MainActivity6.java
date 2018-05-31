@@ -16,20 +16,13 @@ public class MainActivity6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
-        setTitle(getString(R.string.title_of_pr));
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int width=dm.widthPixels;
-        int height=dm.heightPixels;
+        setTitle("Отправить письмо");
         Button bl=findViewById(R.id.ButtonLetter);
         final EditText ep,ec,ek;
-        ep=findViewById(R.id.TextPAscal);
-        ec=findViewById(R.id.TextCpp);
-        ek=findViewById(R.id.TextComent);
-        bl.setTextSize(height/50);
-        ep.setTextSize(height/50);
-        ec.setTextSize(height/50);
-        ek.setTextSize(height/50);
+        ep=(EditText)findViewById(R.id.TextPAscal);
+        ec=(EditText)findViewById(R.id.TextCpp);
+        ek=(EditText)findViewById(R.id.TextComent);
+
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){

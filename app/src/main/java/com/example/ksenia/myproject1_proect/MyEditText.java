@@ -16,6 +16,8 @@ import android.view.Display;
 import android.view.WindowManager;
 
 
+
+
 //класс для текстового поля, где надо пронумеровать строки
 public class MyEditText extends android.support.v7.widget.AppCompatEditText {
 
@@ -31,6 +33,7 @@ public class MyEditText extends android.support.v7.widget.AppCompatEditText {
         DisplayMetrics dm = getResources().getDisplayMetrics();
         int densityDpi = dm.heightPixels;
         paint.setTextSize(densityDpi/33);
+
     }
 
 

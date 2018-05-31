@@ -15,21 +15,11 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         setTitle(getString(R.string.title_of_pr));
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int width=dm.widthPixels;
-        int height=dm.heightPixels;
-        totr1=findViewById(R.id.totranslate);
-        totr2=findViewById(R.id.totraspon);
-        todescr=findViewById(R.id.toask);
-        tohelp=findViewById(R.id.togivehelp);
-        toauthor=findViewById(R.id.tosendletter);
-
-        totr1.setTextSize(height/50);
-        totr2.setTextSize(height/50);
-        todescr.setTextSize(height/50);
-        tohelp.setTextSize(height/50);
-        toauthor.setTextSize(height/50);
+        totr1=(Button)findViewById(R.id.totranslate);
+        totr2=(Button)findViewById(R.id.totraspon);
+        todescr=(Button)findViewById(R.id.toask);
+        tohelp=(Button)findViewById(R.id.togivehelp);
+        toauthor=(Button)findViewById(R.id.tosendletter);
         View.OnClickListener listener=new View.OnClickListener() {
             @Override
             public void onClick(View v){

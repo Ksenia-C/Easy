@@ -15,14 +15,9 @@ public class MainActivity7 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main7);
-        setTitle(getString(R.string.title_of_pr));
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int width=dm.widthPixels;
-        int height=dm.heightPixels;
+        setTitle("О приложении");
         TextView text7 = findViewById(R.id.texthelp);
         text7.setMovementMethod(new ScrollingMovementMethod());
-        text7.setTextSize(height/50);
         text7.setTextColor(Color.BLACK);
         text7.setText(getString(R.string.a11)+"\n"+getString(R.string.a12)+"\n"+getString(R.string.a13)+"\n"+getString(R.string.a14)+"\n"+getString(R.string.a15)+"\n"+getString(R.string.a16)+"\n"+getString(R.string.a17));
 

@@ -16,18 +16,9 @@ public class MainActivity5 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
-        setTitle(getString(R.string.title_of_pr));
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int width=dm.widthPixels;
-        int height=dm.heightPixels;
-        TextView bt1=(TextView) findViewById(R.id.titlep);
-        bt1.setTextSize(height/40);
-        bt1=(TextView) findViewById(R.id.titlec);
-        bt1.setTextSize(height/40);
-        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas(),height/46);
+        setTitle("Справочник");
+        MyMonthAdapter adapter = new MyMonthAdapter(this, makeMas());
         ListView lv =  findViewById(R.id.List);
-
         lv.setAdapter(adapter);
     }
     String name_pas[]= new String[]{"begin end","var a:integer","var a:string","var a:boolean","var a:shortint(char)"
